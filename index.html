@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aurelia Estates - Curating golden standards of living with our premier collections of luxury residential, rental, and commercial properties.">
+    <meta name="keywords" content="luxury real estate, penthouses, villas, commercial property, buy house, rent apartment">
+    <meta name="author" content="Aurelia Estates">
+    
+    <!-- Open Graph (Facebook / LinkedIn) -->
+    <meta property="og:title" content="Aurelia Estates | Luxury Real Estate Agency">
+    <meta property="og:description" content="Find your golden standard of living. Curating elite residential and commercial properties in premium locations.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/images/hero-bg.png">
+    
+    <!-- Title -->
+    <title>Aurelia Estates | Luxury Real Estate Agency</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏠</text></svg>">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- --- Header / Navbar --- -->
+    <header class="navbar" id="main-header">
+        <div class="container">
+            <!-- Logo -->
+            <a href="index.html" class="logo" id="header-logo">
+                <i class="fa-solid fa-hotel logo-icon"></i>
+                AURELIA<span>ESTATES</span>
+            </a>
+
+            <!-- Navigation Links -->
+            <nav class="nav-menu" id="navigation-menu">
+                <div class="nav-item"><a href="index.html" class="nav-link active">Home</a></div>
+                <div class="nav-item"><a href="properties.html" class="nav-link">Properties</a></div>
+                <div class="nav-item"><a href="agents.html" class="nav-link">Agents</a></div>
+                <div class="nav-item"><a href="testimonials.html" class="nav-link">Testimonials</a></div>
+                <div class="nav-item"><a href="contact.html" class="nav-link">Contact</a></div>
+                <a href="contact.html" class="btn btn-primary nav-cta" id="nav-cta-btn">Contact an Agent</a>
+            </nav>
+
+            <!-- Theme Toggle Button -->
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                <i class="fas fa-moon" id="theme-toggle-icon"></i>
+            </button>
+
+            <!-- Hamburger Button -->
+            <button class="hamburger" aria-label="Toggle navigation menu" id="hamburger-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer Overlay -->
+    <div class="menu-overlay" id="drawer-overlay"></div>
+
+    <main>
+        <!-- --- Hero Section --- -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <h1 class="hero-title reveal active">Find Your <span>Golden Standard</span> of Living</h1>
+                <p class="hero-subtitle reveal active">Curating elite residential, rental, and commercial properties in premium locations.</p>
+                
+                <!-- Glassmorphic Search Bar -->
+                <div class="search-container reveal active" id="hero-search-wrapper">
+                    <form class="search-form" id="hero-search-form">
+                        <div class="search-group">
+                            <label for="search-location">Location</label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <input type="text" id="search-location" class="search-input" placeholder="e.g. Beverly Hills, Malibu, Downtown..." aria-label="Property Location Search">
+                            </div>
+                        </div>
+                        <div class="search-group">
+                            <label for="search-type">Property Type</label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-home"></i>
+                                <select id="search-type" class="search-input" aria-label="Property Type Filter">
+                                    <option value="all">All Properties</option>
+                                    <option value="buy">For Sale</option>
+                                    <option value="rent">For Rent</option>
+                                    <option value="commercial">Commercial</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary search-btn" id="search-submit-btn">
+                            <i class="fas fa-search"></i> Search Properties
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- --- About / Luxury Services Section --- -->
+        <section class="about-section section-padding" id="about-intro">
+            <div class="container">
+                <div class="section-title-wrapper" style="text-align: center; margin-bottom: 50px;">
+                    <span class="section-subtitle">Excellence Defined</span>
+                    <h2 class="section-title">The Aurelia Experience</h2>
+                    <p style="max-width: 700px; margin: 20px auto 0; color: var(--color-text-muted); font-size: 1.1rem; line-height: 1.8;">
+                        At Aurelia Estates, we don't just find properties; we curate the golden standard of living. Experience bespoke real estate solutions designed for the discerning individual.
+                    </p>
+                </div>
+
+                <div class="services-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                    <!-- Card 1 -->
+                    <div class="service-card reveal" style="background: var(--color-card-bg); padding: 40px 30px; border-radius: 12px; border: 1px solid var(--color-gray-border); box-shadow: var(--shadow-sm); text-align: center; transition: all 0.3s ease;">
+                        <div class="service-icon" style="font-size: 2.5rem; color: var(--color-gold); margin-bottom: 20px;">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <h3 style="font-size: 1.4rem; font-family: var(--font-primary); color: var(--color-navy); margin-bottom: 15px;">Elite Portfolios</h3>
+                        <p style="color: var(--color-text-muted); margin-bottom: 25px; line-height: 1.6;">Explore our meticulously curated selection of high-end residential, rental, and commercial properties.</p>
+                        <a href="properties.html" class="btn btn-navy" style="padding: 10px 20px; font-size: 0.9rem;">Browse Catalog</a>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="service-card reveal" style="background: var(--color-card-bg); padding: 40px 30px; border-radius: 12px; border: 1px solid var(--color-gray-border); box-shadow: var(--shadow-sm); text-align: center; transition: all 0.3s ease;">
+                        <div class="service-icon" style="font-size: 2.5rem; color: var(--color-gold); margin-bottom: 20px;">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <h3 style="font-size: 1.4rem; font-family: var(--font-primary); color: var(--color-navy); margin-bottom: 15px;">Expert Consultants</h3>
+                        <p style="color: var(--color-text-muted); margin-bottom: 25px; line-height: 1.6;">Meet our certified luxury real estate professionals who will guide you at every step of your journey.</p>
+                        <a href="agents.html" class="btn btn-navy" style="padding: 10px 20px; font-size: 0.9rem;">Meet Our Team</a>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="service-card reveal" style="background: var(--color-card-bg); padding: 40px 30px; border-radius: 12px; border: 1px solid var(--color-gray-border); box-shadow: var(--shadow-sm); text-align: center; transition: all 0.3s ease;">
+                        <div class="service-icon" style="font-size: 2.5rem; color: var(--color-gold); margin-bottom: 20px;">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h3 style="font-size: 1.4rem; font-family: var(--font-primary); color: var(--color-navy); margin-bottom: 15px;">Bespoke Solutions</h3>
+                        <p style="color: var(--color-text-muted); margin-bottom: 25px; line-height: 1.6;">Have specific requirements? Send us an inquiry and allow us to tailor the perfect solution for you.</p>
+                        <a href="contact.html" class="btn btn-navy" style="padding: 10px 20px; font-size: 0.9rem;">Contact Agent</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- --- Footer --- -->
+    <footer class="footer" id="main-footer">
+        <div class="container">
+            <div class="footer-top">
+                <!-- Column 1: Brand -->
+                <div class="footer-col footer-about">
+                    <a href="index.html" class="logo" style="margin-bottom: 20px; display: inline-flex;">
+                        <i class="fa-solid fa-hotel logo-icon"></i>
+                        AURELIA<span>ESTATES</span>
+                    </a>
+                    <p>Providing custom real estate solutions, offering properties with luxurious architecture, state-of-the-art facilities, and premium value appreciation.</p>
+                    <div class="footer-socials">
+                        <a href="#" aria-label="Aurelia Estates Facebook" class="footer-social-btn"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Aurelia Estates Instagram" class="footer-social-btn"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Aurelia Estates YouTube" class="footer-social-btn"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="Aurelia Estates Twitter" class="footer-social-btn"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Navigation Links -->
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links-list">
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home Overview</a></li>
+                        <li><a href="properties.html"><i class="fas fa-chevron-right"></i> Properties Catalog</a></li>
+                        <li><a href="agents.html"><i class="fas fa-chevron-right"></i> Our Consultants</a></li>
+                        <li><a href="testimonials.html"><i class="fas fa-chevron-right"></i> Client Successes</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Get In Touch</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Contact details -->
+                <div class="footer-col">
+                    <h3>Office Contact</h3>
+                    <ul class="footer-contact-list">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>450 N Canon Dr, Beverly Hills, CA 90210, United States</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+1 (800) 555-GOLD<br>+1 (555) 120-0011</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>inquire@aureliaestates.com</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Newsletter -->
+                <div class="footer-col footer-newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to receive notifications about fresh off-market listings and properties.</p>
+                    <form class="newsletter-form" id="footer-newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed successfully!'); this.reset();">
+                        <input type="email" class="newsletter-input" placeholder="Your Email Address" aria-label="Newsletter Email Address" required>
+                        <button type="submit" class="newsletter-btn" aria-label="Subscribe to Newsletter">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Footer Bottom copyright -->
+            <div class="footer-bottom">
+                <p>&copy; 2026 Aurelia Estates. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Disclaimer</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- --- Floating WhatsApp Button --- -->
+    <a href="https://wa.me/15551234567?text=Hello%20Aurelia%20Estates!%20I%20am%20interested%20in%20inquiring%20about%20a%20featured%20property." 
+       class="whatsapp-float" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       aria-label="Contact Aurelia Estates on WhatsApp"
+       id="whatsapp-cta-float">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- --- JavaScript File --- -->
+    <script src="script.js"></script>
+</body>
+</html>

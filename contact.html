@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch with Aurelia Estates. Submit an inquiry form or visit our Beverly Hills office headquarters.">
+    <meta name="keywords" content="contact Aurelia Estates, luxury real estate office, property inquiry">
+    <meta name="author" content="Aurelia Estates">
+    
+    <!-- Open Graph (Facebook / LinkedIn) -->
+    <meta property="og:title" content="Contact Us | Aurelia Estates">
+    <meta property="og:description" content="Reach out to our consultants to find your dream property. We are here to help.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/images/hero-bg.png">
+    
+    <!-- Title -->
+    <title>Contact Us | Aurelia Estates</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏠</text></svg>">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- --- Header / Navbar --- -->
+    <header class="navbar" id="main-header">
+        <div class="container">
+            <!-- Logo -->
+            <a href="index.html" class="logo" id="header-logo">
+                <i class="fa-solid fa-hotel logo-icon"></i>
+                AURELIA<span>ESTATES</span>
+            </a>
+
+            <!-- Navigation Links -->
+            <nav class="nav-menu" id="navigation-menu">
+                <div class="nav-item"><a href="index.html" class="nav-link">Home</a></div>
+                <div class="nav-item"><a href="properties.html" class="nav-link">Properties</a></div>
+                <div class="nav-item"><a href="agents.html" class="nav-link">Agents</a></div>
+                <div class="nav-item"><a href="testimonials.html" class="nav-link">Testimonials</a></div>
+                <div class="nav-item"><a href="contact.html" class="nav-link active">Contact</a></div>
+                <a href="contact.html" class="btn btn-primary nav-cta" id="nav-cta-btn">Contact an Agent</a>
+            </nav>
+
+            <!-- Theme Toggle Button -->
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                <i class="fas fa-moon" id="theme-toggle-icon"></i>
+            </button>
+
+            <!-- Hamburger Button -->
+            <button class="hamburger" aria-label="Toggle navigation menu" id="hamburger-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer Overlay -->
+    <div class="menu-overlay" id="drawer-overlay"></div>
+
+    <main style="padding-top: 100px;">
+        <!-- --- Inquiry Form & Maps Section --- -->
+        <section class="contact-section section-padding" id="contact">
+            <div class="container">
+                <div class="section-title-wrapper" style="text-align: center; margin-bottom: 50px;">
+                    <span class="section-subtitle">Reach Out To Us</span>
+                    <h2 class="section-title">Contact An Agent</h2>
+                </div>
+
+                <div class="contact-container">
+                    <!-- Form Column -->
+                    <div class="inquiry-card reveal">
+                        <h3 class="inquiry-title"><i class="fas fa-envelope-open-text" style="color: var(--color-gold); margin-right: 8px;"></i> Send An Inquiry</h3>
+                        <form id="inquiry-form">
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label for="client-name">Your Name *</label>
+                                    <input type="text" id="client-name" class="form-input" placeholder="e.g. John Doe" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="client-email">Email Address *</label>
+                                    <input type="email" id="client-email" class="form-input" placeholder="e.g. john@example.com" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label for="client-phone">Phone Number</label>
+                                    <input type="tel" id="client-phone" class="form-input" placeholder="e.g. +1 (555) 000-0000">
+                                </div>
+                                <div class="form-group">
+                                    <label for="inquiry-subject">Inquiry Reason</label>
+                                    <select id="inquiry-subject" class="form-input">
+                                        <option value="General Inquiry">General Inquiry</option>
+                                        <option value="Schedule a Tour">Schedule a Private Tour</option>
+                                        <option value="Request a Valuation">Property Valuation Request</option>
+                                        <option value="Commercial Services">Commercial Services</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="preferred-agent">Preferred Real Estate Agent</label>
+                                <select id="preferred-agent" class="form-input">
+                                    <option value="Any Agent">Any Available Agent</option>
+                                    <option value="Sarah Stone">Sarah Stone (Senior Consultant)</option>
+                                    <option value="Marcus Vance">Marcus Vance (Commercial Specialist)</option>
+                                    <option value="Elena Rostova">Elena Rostova (Luxury Director)</option>
+                                    <option value="Julian Cross">Julian Cross (Relocation Expert)</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="client-message">Message *</label>
+                                <textarea id="client-message" class="form-input" placeholder="Tell us about your dream home or requirements..." required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-navy contact-btn" id="submit-inquiry-btn">
+                                <i class="far fa-paper-plane"></i> Send Message
+                            </button>
+
+                            <!-- Form Status Message -->
+                            <div class="form-status" id="form-status"></div>
+                        </form>
+                    </div>
+
+                    <!-- Information & Google Maps Column -->
+                    <div class="map-info-column reveal">
+                        <!-- Direct Contact Grid info -->
+                        <div class="info-items-grid">
+                            <div class="info-item">
+                                <div class="info-icon"><i class="fas fa-map-marked-alt"></i></div>
+                                <div class="info-text">
+                                    <h4>Headquarters</h4>
+                                    <p>450 N Canon Dr, Beverly Hills, CA 90210</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-icon"><i class="fas fa-phone-alt"></i></div>
+                                <div class="info-text">
+                                    <h4>Direct Line</h4>
+                                    <p>+1 (800) 555-GOLD</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Maps IFrame Container -->
+                        <div class="map-embed-container" id="map-wrapper">
+                            <!-- Responsive Google Maps Embed -->
+                            <iframe 
+                                title="Aurelia Estates Headquarters Map"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.474665809756!2d-118.4026362!3d34.0736201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bc0bc7be34df%3A0xf69c0d3810edb89b!2sBeverly%20Hills%2C%20CA%2090210%2C%20USA!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- --- Footer --- -->
+    <footer class="footer" id="main-footer">
+        <div class="container">
+            <div class="footer-top">
+                <!-- Column 1: Brand -->
+                <div class="footer-col footer-about">
+                    <a href="index.html" class="logo" style="margin-bottom: 20px; display: inline-flex;">
+                        <i class="fa-solid fa-hotel logo-icon"></i>
+                        AURELIA<span>ESTATES</span>
+                    </a>
+                    <p>Providing custom real estate solutions, offering properties with luxurious architecture, state-of-the-art facilities, and premium value appreciation.</p>
+                    <div class="footer-socials">
+                        <a href="#" aria-label="Aurelia Estates Facebook" class="footer-social-btn"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Aurelia Estates Instagram" class="footer-social-btn"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Aurelia Estates YouTube" class="footer-social-btn"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="Aurelia Estates Twitter" class="footer-social-btn"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Navigation Links -->
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links-list">
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home Overview</a></li>
+                        <li><a href="properties.html"><i class="fas fa-chevron-right"></i> Properties Catalog</a></li>
+                        <li><a href="agents.html"><i class="fas fa-chevron-right"></i> Our Consultants</a></li>
+                        <li><a href="testimonials.html"><i class="fas fa-chevron-right"></i> Client Successes</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Get In Touch</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Contact details -->
+                <div class="footer-col">
+                    <h3>Office Contact</h3>
+                    <ul class="footer-contact-list">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>450 N Canon Dr, Beverly Hills, CA 90210, United States</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+1 (800) 555-GOLD<br>+1 (555) 120-0011</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>inquire@aureliaestates.com</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Newsletter -->
+                <div class="footer-col footer-newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to receive notifications about fresh off-market listings and properties.</p>
+                    <form class="newsletter-form" id="footer-newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed successfully!'); this.reset();">
+                        <input type="email" class="newsletter-input" placeholder="Your Email Address" aria-label="Newsletter Email Address" required>
+                        <button type="submit" class="newsletter-btn" aria-label="Subscribe to Newsletter">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Footer Bottom copyright -->
+            <div class="footer-bottom">
+                <p>&copy; 2026 Aurelia Estates. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Disclaimer</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- --- Floating WhatsApp Button --- -->
+    <a href="https://wa.me/15551234567?text=Hello%20Aurelia%20Estates!%20I%20am%20interested%20in%20inquiring%20about%20a%20featured%20property." 
+       class="whatsapp-float" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       aria-label="Contact Aurelia Estates on WhatsApp"
+       id="whatsapp-cta-float">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- --- JavaScript File --- -->
+    <script src="script.js"></script>
+</body>
+</html>

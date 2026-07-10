@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Meet the elite team of real estate consultants at Aurelia Estates. Experts in luxury residential, rental, and commercial properties.">
+    <meta name="keywords" content="luxury real estate, real estate agents, property consultants, Aurelia Estates team">
+    <meta name="author" content="Aurelia Estates">
+    
+    <!-- Open Graph (Facebook / LinkedIn) -->
+    <meta property="og:title" content="Our Consultants | Aurelia Estates">
+    <meta property="og:description" content="Meet our professional consultants guiding you to the golden standard of living.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/images/hero-bg.png">
+    
+    <!-- Title -->
+    <title>Our Consultants | Aurelia Estates</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏠</text></svg>">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- --- Header / Navbar --- -->
+    <header class="navbar" id="main-header">
+        <div class="container">
+            <!-- Logo -->
+            <a href="index.html" class="logo" id="header-logo">
+                <i class="fa-solid fa-hotel logo-icon"></i>
+                AURELIA<span>ESTATES</span>
+            </a>
+
+            <!-- Navigation Links -->
+            <nav class="nav-menu" id="navigation-menu">
+                <div class="nav-item"><a href="index.html" class="nav-link">Home</a></div>
+                <div class="nav-item"><a href="properties.html" class="nav-link">Properties</a></div>
+                <div class="nav-item"><a href="agents.html" class="nav-link active">Agents</a></div>
+                <div class="nav-item"><a href="testimonials.html" class="nav-link">Testimonials</a></div>
+                <div class="nav-item"><a href="contact.html" class="nav-link">Contact</a></div>
+                <a href="contact.html" class="btn btn-primary nav-cta" id="nav-cta-btn">Contact an Agent</a>
+            </nav>
+
+            <!-- Theme Toggle Button -->
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                <i class="fas fa-moon" id="theme-toggle-icon"></i>
+            </button>
+
+            <!-- Hamburger Button -->
+            <button class="hamburger" aria-label="Toggle navigation menu" id="hamburger-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer Overlay -->
+    <div class="menu-overlay" id="drawer-overlay"></div>
+
+    <main style="padding-top: 100px;">
+        <!-- --- Agent Profiles Section --- -->
+        <section class="agents-section section-padding" id="agents">
+            <div class="container">
+                <div class="section-title-wrapper" style="text-align: center; margin-bottom: 50px;">
+                    <span class="section-subtitle">Real Estate Consultants</span>
+                    <h2 class="section-title">Meet Our Agents</h2>
+                </div>
+
+                <div class="agents-grid">
+                    <!-- Agent 1 -->
+                    <div class="agent-card reveal">
+                        <div class="agent-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80" alt="Sarah Stone" class="agent-img" loading="lazy">
+                            <div class="agent-socials">
+                                <a href="contact.html?agent=Sarah%20Stone" aria-label="Sarah Stone LinkedIn" class="agent-social-btn"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="contact.html?agent=Sarah%20Stone" aria-label="Sarah Stone Twitter" class="agent-social-btn"><i class="fab fa-twitter"></i></a>
+                                <a href="contact.html?agent=Sarah%20Stone" aria-label="Sarah Stone Email" class="agent-social-btn"><i class="far fa-envelope"></i></a>
+                            </div>
+                        </div>
+                        <div class="agent-details">
+                            <h3 class="agent-name">Sarah Stone</h3>
+                            <p class="agent-role">Senior Consultant</p>
+                            <a href="tel:+15551204321" class="agent-phone"><i class="fas fa-phone-alt"></i> +1 (555) 120-4321</a>
+                        </div>
+                    </div>
+
+                    <!-- Agent 2 -->
+                    <div class="agent-card reveal">
+                        <div class="agent-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=400&q=80" alt="Marcus Vance" class="agent-img" loading="lazy">
+                            <div class="agent-socials">
+                                <a href="contact.html?agent=Marcus%20Vance" aria-label="Marcus Vance LinkedIn" class="agent-social-btn"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="contact.html?agent=Marcus%20Vance" aria-label="Marcus Vance Twitter" class="agent-social-btn"><i class="fab fa-twitter"></i></a>
+                                <a href="contact.html?agent=Marcus%20Vance" aria-label="Marcus Vance Email" class="agent-social-btn"><i class="far fa-envelope"></i></a>
+                            </div>
+                        </div>
+                        <div class="agent-details">
+                            <h3 class="agent-name">Marcus Vance</h3>
+                            <p class="agent-role">Commercial Specialist</p>
+                            <a href="tel:+15551208765" class="agent-phone"><i class="fas fa-phone-alt"></i> +1 (555) 120-8765</a>
+                        </div>
+                    </div>
+
+                    <!-- Agent 3 -->
+                    <div class="agent-card reveal">
+                        <div class="agent-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=400&q=80" alt="Elena Rostova" class="agent-img" loading="lazy">
+                            <div class="agent-socials">
+                                <a href="contact.html?agent=Elena%20Rostova" aria-label="Elena Rostova LinkedIn" class="agent-social-btn"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="contact.html?agent=Elena%20Rostova" aria-label="Elena Rostova Twitter" class="agent-social-btn"><i class="fab fa-twitter"></i></a>
+                                <a href="contact.html?agent=Elena%20Rostova" aria-label="Elena Rostova Email" class="agent-social-btn"><i class="far fa-envelope"></i></a>
+                            </div>
+                        </div>
+                        <div class="agent-details">
+                            <h3 class="agent-name">Elena Rostova</h3>
+                            <p class="agent-role">Luxury Director</p>
+                            <a href="tel:+15551207890" class="agent-phone"><i class="fas fa-phone-alt"></i> +1 (555) 120-7890</a>
+                        </div>
+                    </div>
+
+                    <!-- Agent 4 -->
+                    <div class="agent-card reveal">
+                        <div class="agent-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=400&q=80" alt="Julian Cross" class="agent-img" loading="lazy">
+                            <div class="agent-socials">
+                                <a href="contact.html?agent=Julian%20Cross" aria-label="Julian Cross LinkedIn" class="agent-social-btn"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="contact.html?agent=Julian%20Cross" aria-label="Julian Cross Twitter" class="agent-social-btn"><i class="fab fa-twitter"></i></a>
+                                <a href="contact.html?agent=Julian%20Cross" aria-label="Julian Cross Email" class="agent-social-btn"><i class="far fa-envelope"></i></a>
+                            </div>
+                        </div>
+                        <div class="agent-details">
+                            <h3 class="agent-name">Julian Cross</h3>
+                            <p class="agent-role">Relocation Expert</p>
+                            <a href="tel:+15551209988" class="agent-phone"><i class="fas fa-phone-alt"></i> +1 (555) 120-9988</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- --- Footer --- -->
+    <footer class="footer" id="main-footer">
+        <div class="container">
+            <div class="footer-top">
+                <!-- Column 1: Brand -->
+                <div class="footer-col footer-about">
+                    <a href="index.html" class="logo" style="margin-bottom: 20px; display: inline-flex;">
+                        <i class="fa-solid fa-hotel logo-icon"></i>
+                        AURELIA<span>ESTATES</span>
+                    </a>
+                    <p>Providing custom real estate solutions, offering properties with luxurious architecture, state-of-the-art facilities, and premium value appreciation.</p>
+                    <div class="footer-socials">
+                        <a href="#" aria-label="Aurelia Estates Facebook" class="footer-social-btn"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Aurelia Estates Instagram" class="footer-social-btn"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Aurelia Estates YouTube" class="footer-social-btn"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="Aurelia Estates Twitter" class="footer-social-btn"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Navigation Links -->
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links-list">
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home Overview</a></li>
+                        <li><a href="properties.html"><i class="fas fa-chevron-right"></i> Properties Catalog</a></li>
+                        <li><a href="agents.html"><i class="fas fa-chevron-right"></i> Our Consultants</a></li>
+                        <li><a href="testimonials.html"><i class="fas fa-chevron-right"></i> Client Successes</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Get In Touch</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Contact details -->
+                <div class="footer-col">
+                    <h3>Office Contact</h3>
+                    <ul class="footer-contact-list">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>450 N Canon Dr, Beverly Hills, CA 90210, United States</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+1 (800) 555-GOLD<br>+1 (555) 120-0011</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>inquire@aureliaestates.com</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Newsletter -->
+                <div class="footer-col footer-newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to receive notifications about fresh off-market listings and properties.</p>
+                    <form class="newsletter-form" id="footer-newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed successfully!'); this.reset();">
+                        <input type="email" class="newsletter-input" placeholder="Your Email Address" aria-label="Newsletter Email Address" required>
+                        <button type="submit" class="newsletter-btn" aria-label="Subscribe to Newsletter">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Footer Bottom copyright -->
+            <div class="footer-bottom">
+                <p>&copy; 2026 Aurelia Estates. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Disclaimer</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- --- Floating WhatsApp Button --- -->
+    <a href="https://wa.me/15551234567?text=Hello%20Aurelia%20Estates!%20I%20am%20interested%20in%20inquiring%20about%20a%20featured%20property." 
+       class="whatsapp-float" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       aria-label="Contact Aurelia Estates on WhatsApp"
+       id="whatsapp-cta-float">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- --- JavaScript File --- -->
+    <script src="script.js"></script>
+</body>
+</html>
