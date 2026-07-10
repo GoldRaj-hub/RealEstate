@@ -1,6 +1,6 @@
 /* -----------------------------------------
    Real Estate Agency - Modern CSS Styling
-   Design Theme: Navy Blue & White with Gold Accents
+   Design Theme: Forest Green & White with Crimson Red Accents
    Font: Poppins (Google Fonts)
 ----------------------------------------- */
 
@@ -23,22 +23,22 @@
     --border-radius-md: 12px;
     --border-radius-lg: 24px;
 
-    /* LIGHT THEME (Blue & Pink) - Default */
-    --color-navy-dark: #1E3A8A;
-    --color-navy-dark-rgb: 30, 58, 138;
-    --color-navy-medium: #2563EB;
-    --color-navy-light: #3B82F6;
-    --color-gold: #EC4899;
-    --color-gold-hover: #DB2777;
-    --color-gold-light: rgba(236, 72, 153, 0.15);
-    --color-gold-rgb: 236, 72, 153;
+    /* LIGHT THEME (Green & Red) - Default */
+    --color-navy-dark: #0F2F1D;
+    --color-navy-dark-rgb: 15, 47, 29;
+    --color-navy-medium: #15803D;
+    --color-navy-light: #22C55E;
+    --color-gold: #E11D48;
+    --color-gold-hover: #BE123C;
+    --color-gold-light: rgba(225, 29, 72, 0.15);
+    --color-gold-rgb: 225, 29, 72;
     
     --color-white: #FFFFFF;
     --color-gray-light: #F8FAFC;
     --color-gray-border: #E2E8F0;
     --color-text-dark: #0F172A;
     --color-text-muted: #64748B;
-    --color-heading: #1E3A8A;
+    --color-heading: #0F2F1D;
 
     /* Shadows */
     --shadow-sm: 0 2px 4px rgba(var(--color-navy-dark-rgb), 0.05);
@@ -47,42 +47,42 @@
     --shadow-gold: 0 10px 20px -5px rgba(var(--color-gold-rgb), 0.3);
 }
 
-/* Explicit Light Theme (Blue & Pink) */
+/* Explicit Light Theme (Green & Red) */
 [data-theme="light"] {
-    --color-navy-dark: #1E3A8A;
-    --color-navy-dark-rgb: 30, 58, 138;
-    --color-navy-medium: #2563EB;
-    --color-navy-light: #3B82F6;
-    --color-gold: #EC4899;
-    --color-gold-hover: #DB2777;
-    --color-gold-light: rgba(236, 72, 153, 0.15);
-    --color-gold-rgb: 236, 72, 153;
+    --color-navy-dark: #0F2F1D;
+    --color-navy-dark-rgb: 15, 47, 29;
+    --color-navy-medium: #15803D;
+    --color-navy-light: #22C55E;
+    --color-gold: #E11D48;
+    --color-gold-hover: #BE123C;
+    --color-gold-light: rgba(225, 29, 72, 0.15);
+    --color-gold-rgb: 225, 29, 72;
     
     --color-white: #FFFFFF;
     --color-gray-light: #F8FAFC;
     --color-gray-border: #E2E8F0;
     --color-text-dark: #0F172A;
     --color-text-muted: #64748B;
-    --color-heading: #1E3A8A;
+    --color-heading: #0F2F1D;
 }
 
-/* Dark Theme (Red & Yellow) */
+/* Dark Theme (Forest Green & Rose Red) */
 [data-theme="dark"] {
-    --color-navy-dark: #1B0F0F;
-    --color-navy-dark-rgb: 27, 15, 15;
-    --color-navy-medium: #DC2626;
-    --color-navy-light: #EF4444;
-    --color-gold: #FBBF24;
-    --color-gold-hover: #F59E0B;
-    --color-gold-light: rgba(251, 191, 36, 0.15);
-    --color-gold-rgb: 251, 191, 36;
+    --color-navy-dark: #07140B;
+    --color-navy-dark-rgb: 7, 20, 11;
+    --color-navy-medium: #0F2F1D;
+    --color-navy-light: #15803D;
+    --color-gold: #F43F5E;
+    --color-gold-hover: #E11D48;
+    --color-gold-light: rgba(244, 63, 94, 0.15);
+    --color-gold-rgb: 244, 63, 94;
     
-    --color-white: #1A1111;
-    --color-gray-light: #120A0A;
-    --color-gray-border: #3A2222;
-    --color-text-dark: #FDF2F2;
-    --color-text-muted: #FCA5A5;
-    --color-heading: #EF4444;
+    --color-white: #0B1E13;
+    --color-gray-light: #07150C;
+    --color-gray-border: #1E3A27;
+    --color-text-dark: #ECFDF5;
+    --color-text-muted: #A7F3D0;
+    --color-heading: #10B981;
 }
 
 /* Dark Theme Text Color Overrides
